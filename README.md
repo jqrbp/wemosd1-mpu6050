@@ -9,39 +9,41 @@ Perangkat Keras:
 Perangkat Lunak:
 1. Arduino dengan tambahan:
 
-a. board library: esp8266 versi 2.5.2
+   a. board library: esp8266 versi 2.5.2.
 
-Website: https://github.com/esp8266/Arduino
+      - Website: https://github.com/esp8266/Arduino
 
-Fungsi: untuk wifi, http, dan websocket server library
+      - Fungsi: untuk wifi, http, dan websocket server library
 
-b. SPIFFS plugin: ESP8266FS versi 0.4.0 
+   b. SPIFFS plugin: ESP8266FS versi 0.4.0.
 
-Website: https://github.com/esp8266/arduino-esp8266fs-plugin/releases
+      - Website: https://github.com/esp8266/arduino-esp8266fs-plugin/releases
 
-Fungsi: untuk mengunggah data file html dan javascript yang dibutuhkan sebagai simulasi
+      - Fungsi: untuk mengunggah data file html dan javascript yang dibutuhkan sebagai simulasi
 
 
 Koneksi pin:
 
-mpu6050         Wemos D1
+mpu6050------Wemos D1
 
-VCC             3.3V
+VCC----------3.3V
 
-SDA             D2
+GND----------GND
 
-SCL             D1
+SDA----------D2
 
-AD0             D3
+SCL----------D1
 
-INT             D5
+AD0----------D3
+
+INT----------D5
 
 
 Cara:
 
 1. Unggah file wemosd1-mpu6050-ino.ino ke wemosd1 menggunakan program Arduino. 
 
-   Gunakan setting Flash Size = 4M(3M SPIFFS)
+   Gunakan setting Flash Size = 4M(3M SPIFFS).
 
 2. Klik Tools->ESP8266 Sketch Data Upload.
 
